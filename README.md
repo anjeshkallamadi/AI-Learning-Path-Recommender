@@ -14,7 +14,7 @@ Created by Kallamadi Anjesh.
 
 1.  The user inputs a learning goal (e.g., "I want to master frontend development") into the Angular chat interface.
 2.  The Django backend receives the request and vectorizes the text using a pre-trained TF-IDF model.
-3.  The system calculates the cosine similarity against a database of courses and extracts the top 7 unique, highly relevant courses.
+3.  The system calculates the cosine similarity against a database of courses and extracts the top 10 unique, highly relevant courses.
 4.  The course list and user goal are sent to the Gemini LLM with a strict prompt to generate a chronological learning roadmap.
 5.  The Angular frontend parses the resulting JSON and renders a beautiful, interactive vertical timeline UI.
 
@@ -69,3 +69,22 @@ Your browser will automatically open the application at http://localhost:4200/. 
 
 
 
+### 🚀 Future Enhancements
+
+As this prototype evolves, the following features are planned for future development:
+
+Interactive Progress Dashboard: A visual UI (utilizing Chart.js or ng2-charts) allowing users to check off milestones and visualize their skill development over time.
+
+User Authentication: Enable users to create accounts, save their personalized generated paths, and resume their progress later.
+
+Export Functionality: Allow users to download their custom learning roadmap as a formatted PDF.
+
+### 🤝 Contributing
+Contributions, issues, and feature requests are always welcome! Feel free to check the issues page if you want to contribute.
+
+### 📬 Contact
+Kallamadi Anjesh
+
+GitHub: @anjeshkallamadi
+
+Project Link: https://github.com/anjeshkallamadi/AI-Learning-Path-Recommender
