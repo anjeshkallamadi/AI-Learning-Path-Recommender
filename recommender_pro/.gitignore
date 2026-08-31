@@ -1,0 +1,7 @@
+# 1. Security & Environment Variables (CRITICAL)
+.env
+.env.*
+*.env
+
+*.pkl
+*.csv

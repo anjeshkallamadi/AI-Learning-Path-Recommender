@@ -1,0 +1,23 @@
+<div *ngIf="pathData && pathData.learning_path" class="roadmap-wrapper" style="max-width: 600px; margin: 2rem auto;">
+  <h3 style="margin-bottom: 1.5rem; color: #333;">Your Personalized Path</h3>
+  
+  <div class="timeline" style="position: relative; padding-left: 30px; border-left: 3px solid #007bff;">
+    
+    <div *ngFor="let item of pathData.learning_path; let i = index" class="milestone" style="margin-bottom: 2rem; position: relative;">
+      
+      <div class="dot" style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; background: white; border: 3px solid #007bff; border-radius: 50%;"></div>
+      
+      <div class="card" style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <span style="font-size: 0.85rem; font-weight: bold; color: #007bff; text-transform: uppercase;">
+          Milestone {{ item.milestone }}
+        </span>
+        <h4 style="margin: 0.5rem 0; color: #222;">{{ item.course_name }}</h4>
+        <p style="margin: 0; color: #555; font-size: 0.95rem; line-height: 1.5;">
+          <strong>Why:</strong> {{ item.explanation }}
+        </p>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
